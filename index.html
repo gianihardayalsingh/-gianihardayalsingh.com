@@ -21,6 +21,14 @@
   .photoGrid img{height:165px}
 }
 </style>
+
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#071a3b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Giani Hardayal Singh">
+<link rel="apple-touch-icon" href="/assets/app-icon-180.png">
+
 </head><body>
 <header class="top"><div class="wrap nav"><div class="brand">Giani Hardayal Singh</div><nav class="links"><a href="#about">About</a><a href="#service">Sewa</a><a href="#education">Education</a><a href="#recognition">Recognition</a><a href="#journey">Journey</a><a href="#links">Links</a></nav><div class="lang"><button data-lbtn="en" aria-pressed="true">EN</button><button data-lbtn="hi" aria-pressed="false">हिं</button><button data-lbtn="pa" aria-pressed="false">ਪੰ</button></div></div></header>
 <section class="hero"><div class="wrap heroGrid"><div class="portrait"><img src="assets/giani-hardayal-singh.jpg" alt="Giani Hardayal Singh"></div><div><div class="eyebrow">Official Website</div><div data-lang="en" class="active"><h1>Giani Hardayal Singh</h1><div class="native">ਗਿਆਨੀ ਹਰਦਿਆਲ ਸਿੰਘ · ज्ञानी हरदयाल सिंह</div><p class="lead">Sikh religious educator, Granthi, Hazoori Ragi and community servant based in Maryland, United States.</p></div><div data-lang="hi"><h1>ज्ञानी हरदयाल सिंह</h1><div class="native">Giani Hardayal Singh · ਗਿਆਨੀ ਹਰਦਿਆਲ ਸਿੰਘ</div><p class="lead">मैरीलैंड, अमेरिका में सेवारत सिख धर्म-शिक्षक, ग्रंथी, हज़ूरी रागी और समाजसेवी।</p></div><div data-lang="pa"><h1>ਗਿਆਨੀ ਹਰਦਿਆਲ ਸਿੰਘ</h1><div class="native">Giani Hardayal Singh · ज्ञानी हरदयाल सिंह</div><p class="lead">ਮੈਰੀਲੈਂਡ, ਅਮਰੀਕਾ ਵਿੱਚ ਸੇਵਾ ਨਿਭਾ ਰਹੇ ਸਿੱਖ ਧਰਮ-ਅਧਿਆਪਕ, ਗ੍ਰੰਥੀ, ਹਜ਼ੂਰੀ ਰਾਗੀ ਅਤੇ ਸਮਾਜ ਸੇਵਕ।</p></div><div class="badges"><span class="badge">Certified Religious Freedom Consultant (CRFC)</span><span class="badge">USIDHR Alumni Ambassador</span><span class="badge">General Member — USIDHR</span></div><div class="cta"><a class="btn primary" href="#about">Read Profile</a><a class="btn ghost" href="#links">Official Links</a></div></div></div></section>
@@ -76,4 +84,13 @@
 </div></section>
 <section id="links"><div class="wrap"><h2 class="sectionTitle">Official Links</h2><p class="intro">Public communication and service-related profiles.</p><div class="social"><a href="https://www.facebook.com/GianiHardayalSingh/" target="_blank" rel="noopener">Facebook — Official Page ↗</a><a href="https://www.facebook.com/gianiji517/" target="_blank" rel="noopener">Facebook — Profile ↗</a><a href="https://www.instagram.com/hardayalsingh.517/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/@GianiHardayalSingh517" target="_blank" rel="noopener">YouTube ↗</a><a href="https://granthisabha.in/management-team.php" target="_blank" rel="noopener">Granthi Sabha — Management Team ↗</a><a href="https://usidhr.org/" target="_blank" rel="noopener">USIDHR ↗</a></div></div></section></main>
 <footer><div class="wrap foot"><div>© Giani Hardayal Singh. Official website.</div><div>Maryland, United States</div></div></footer>
-<script>const buttons=[...document.querySelectorAll('[data-lbtn]')];function setLang(lang){document.querySelectorAll('[data-lang]').forEach(el=>el.classList.toggle('active',el.dataset.lang===lang));buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lbtn===lang)));document.documentElement.lang=lang==='pa'?'pa':lang==='hi'?'hi':'en';}buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lbtn)));</script></body></html>
+<script>const buttons=[...document.querySelectorAll('[data-lbtn]')];function setLang(lang){document.querySelectorAll('[data-lang]').forEach(el=>el.classList.toggle('active',el.dataset.lang===lang));buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lbtn===lang)));document.documentElement.lang=lang==='pa'?'pa':lang==='hi'?'hi':'en';}buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lbtn)));</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
+</script>
+
+</body></html>
